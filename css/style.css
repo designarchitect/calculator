@@ -1,0 +1,134 @@
+body {
+    background: url('../images/linedpaper.png');
+    font-family: 'Electrolize', Helvetica;
+    src: url(../fonts/Electrolize-Regular.ttf);
+}
+
+img {
+    position: absolute;
+    width: 36%;
+    top: 1%;
+    left: 6%;
+    opacity: 0.8;
+}
+
+.calculator {
+    background: url('../images/stardust.png');
+    margin: 1em auto;
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    left: 30%;
+    border-bottom: 9px solid #627383;
+    border-top: 9px solid #627383;
+    border-radius: 10px;
+    box-shadow: 0px 6px #313941, 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    background-color: #A8E6CE;
+    border: 1px solid white;
+    width: 20%;
+    height: 100px;
+    font-size: 40px;
+    color: white;
+    margin-top: 5px;
+    border-radius: 100%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+.top_screen {
+    width: 100px;
+    height: 30px;
+    list-style-type: none;
+    position: relative;
+    left: 100px;
+    opacity: 0.5;
+}
+
+button:hover {
+  background-color: #3FB8AF;
+}
+
+.keypad {
+    position: relative;
+    left: 6%;
+    top: 10%;
+}
+
+.allclear {
+    background-color: #776A74;
+    border:none;
+    border: 2px solid #665F6C;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px rgba(0,3,7, 0.2);
+    left: 67%;
+    top: -40px;
+    position: absolute;
+    transition: all 0.2s ease;
+}
+
+.allclear:hover {background-color: #665F6C;}
+.allclear:focus {outline: 0;}
+.allclear:active {box-shadow: 0px 0px #6b54d3;top: -35px;}
+
+.clear:focus {outline:0;}
+.clear:active {box-shadow: 0px 0px #6b54d3;top: 28px;}
+
+.clear {
+    background-color: #EDF1DE;
+    border: 2px solid #665F6C;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    color: gray;
+    border-radius: 10px;
+    box-shadow: 0px 4px rgba(239,255,205, 0.2);
+    left: 335px;
+    top: 4%;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.clear:hover {background-color: #EFFFCD;}
+
+.inputdisplay {
+    background-color: #627383;
+    width: 65%;
+    height: 110px;
+    margin-bottom: -20px;
+    color: #DCEDC2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 3em;
+    text-align: right;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0px 7px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: -40px;
+}
+
+.equal_button {
+    background-color: #776A74;
+    border: 2px solid #665F6C;
+}
+
+.equal_button:hover {
+    background-color: #665F6C;
+}
+
+button:focus {outline:0;}
+
+.operator_button {
+    background-color: #FF9F80;
+}
+
+.operator_button:hover {
+    background-color: #ED744C;
+}

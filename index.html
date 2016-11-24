@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<!--hi-->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="icon" type="image/png" href="images/icon.png" sizes="16x16">
+
+    <title>let's do math!</title>
+</head>
+<body>
+
+<div id="calculator" class="calculator">
+    <div class="keypad">
+	   <form name = "form">
+            <div class="input1">
+              <input name="result" id="inputdisplay" class="inputdisplay" placeholder="Ready" readonly>
+            </div>
+            <div class="input2">
+              <input type="button" onclick="allclear_pressed()" id="allclear" class="allclear" value="AC">
+              <input type="button" onclick="clear_pressed()" id="clear" class="clear" value="C">
+            </div>
+            <br>
+            <button type="button" value="7" onclick="input_digit(7)">7</button>
+            <button type="button" value="8" onclick="input_digit(8)">8</button>
+            <button type="button" value="9" onclick="input_digit(9)">9</button>
+            <button class="operator_button" type="button" value="/" onclick="divide_numbers()">÷</button>
+            <br>
+            <button type="button" value="4" onclick="input_digit(4)">4</button>
+            <button type="button" value="5" onclick="input_digit(5)">5</button>
+            <button type="button" value="6" onclick="input_digit(6)">6</button>
+            <button class="operator_button" type="button" value="*" onclick="multiply_numbers()">x</button>
+            <br>
+            <button type="button" value="1" onclick="input_digit(1)">1</button>
+            <button type="button" value="2" onclick="input_digit(2)">2</button>
+            <button type="button" value="3" onclick="input_digit(3)">3</button>
+            <button class="operator_button" type="button" value="-" onclick="subtract_numbers()">-</button>
+            <br>
+            <button type="button" value="0" onclick="input_digit(0)">0</button>
+            <button type="button" value="." onclick="dot()">.</button>
+            <!-- <button type="button" value="^" onclick="pow_operator()">^</button> -->
+            <button class="equal_button" type="button" value="=" onclick="get_total()">=</button>
+            <button class="operator_button" type="button" value="+" onclick="add_numbers()">+</button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
